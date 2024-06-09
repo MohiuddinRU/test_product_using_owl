@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="test_product_using_owl.ProductSearchPage">
+        <div class="receipt-screen screen h-100 bg-100">
+            <h1>Products</h1>
+            <t t-foreach="state.products" t-as="product" t-key="product.id">
+                <ProductCard product="product"/>
+            </t>
+        </div>
+    </t>
+</templates>

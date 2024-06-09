@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="test_product_using_owl.ProductCard">
+        <div>
+            <div t-out="props.product.name"/>
+            <div>
+                Price:
+                <div t-out="props.product.list_price"/>
+            </div>
+            <img t-attf-src="/web/image/product.template/#{props.product.id}/image_1920" 
+                style="height: 200px; width: 200px;"/>
+        </div>
+    </t>
+</templates>
